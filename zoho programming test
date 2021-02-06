@@ -1,0 +1,22 @@
+#include <stdio.h>
+void matrix(int size)  //function declaration and definition 
+{
+    int row,col;  //declaring the variables
+    printf("\n");
+   for(row=size;row>0;row--)
+    {
+        for(col=size;col>row;col--)
+            printf("%d ",col);
+        for(col=row;col>0;col--)
+            printf("%d ",row);
+        printf("\n");
+    }  
+}
+int main()
+{
+    int size;
+    printf("Input:");
+    scanf("%d",&size);//reading the input
+    matrix(size); //calling the function 
+    return 0;
+}
